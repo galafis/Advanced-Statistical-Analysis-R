@@ -1,90 +1,102 @@
-# Documentação
+# Documentation / Documentação
 
-## Propósito
+## Purpose / Propósito
 
-Este diretório contém toda a documentação técnica do projeto Advanced Statistical Analysis R, incluindo guias de usuário, documentação de API, tutoriais e especificações técnicas.
+**EN:** This directory contains all technical documentation for the Advanced Statistical Analysis R project, including user guides, API documentation, tutorials, and technical specifications for scientific computing applications.
 
-## Estrutura
+**PT:** Este diretório contém toda a documentação técnica do projeto Advanced Statistical Analysis R, incluindo guias de usuário, documentação de API, tutoriais e especificações técnicas para aplicações de computação científica.
+
+## Structure / Estrutura
 
 ```
 docs/
-├── api/                     # Documentação da API
-│   ├── functions_reference.md # Referência das funções
-│   ├── parameters_guide.md   # Guia de parâmetros
-│   └── return_values.md      # Documentação de valores retornados
-├── tutorials/               # Tutoriais e guias
-│   ├── getting_started.md   # Guia de início rápido
-│   ├── basic_analysis.md    # Análise básica
-│   ├── advanced_techniques.md # Técnicas avançadas
-│   └── shiny_apps_guide.md  # Guia das aplicações Shiny
-├── examples/                # Exemplos práticos
-│   ├── case_studies/        # Estudos de caso
-│   ├── sample_analyses/     # Análises de exemplo
-│   └── workflows/           # Fluxos de trabalho
-├── technical/               # Documentação técnica
-│   ├── architecture.md     # Arquitetura do sistema
-│   ├── algorithms.md       # Algoritmos implementados
-│   ├── performance.md      # Análise de performance
-│   └── dependencies.md     # Dependências e requisitos
-├── user_guides/             # Guias do usuário
-│   ├── installation.md     # Guia de instalação
-│   ├── configuration.md    # Configuração
-│   ├── troubleshooting.md  # Solução de problemas
-│   └── faq.md              # Perguntas frequentes
-└── README.md               # Este arquivo
+├── api/                     # API Documentation / Documentação da API
+│   ├── functions_reference.md # Functions Reference / Referência das funções
+│   ├── parameters_guide.md   # Parameters Guide / Guia de parâmetros
+│   └── return_values.md      # Return Values Documentation / Documentação de valores retornados
+├── tutorials/               # Tutorials and Guides / Tutoriais e guias
+│   ├── getting_started.md   # Quick Start Guide / Guia de início rápido
+│   ├── basic_analysis.md    # Basic Analysis / Análise básica
+│   ├── advanced_techniques.md # Advanced Techniques / Técnicas avançadas
+│   └── shiny_apps_guide.md  # Shiny Applications Guide / Guia das aplicações Shiny
+├── examples/                # Practical Examples / Exemplos práticos
+│   ├── case_studies/        # Case Studies / Estudos de caso
+│   ├── code_samples/        # Code Samples / Amostras de código
+│   └── datasets/            # Example Datasets / Conjuntos de dados de exemplo
+├── technical/               # Technical Specifications / Especificações técnicas
+│   ├── architecture.md     # System Architecture / Arquitetura do sistema
+│   ├── performance.md      # Performance Guidelines / Diretrizes de performance
+│   └── dependencies.md     # Dependencies / Dependências
+└── user_guides/            # User Guides / Guias do usuário
+    ├── installation.md     # Installation Guide / Guia de instalação
+    ├── configuration.md    # Configuration / Configuração
+    └── troubleshooting.md  # Troubleshooting / Solução de problemas
 ```
 
-## Exemplos de Conteúdo Futuro
+## Tutorial Standards / Padrões para Tutoriais
 
-### Documentação da API
-- Referência completa de todas as funções
-- Especificação de parâmetros de entrada
-- Documentação de valores de retorno
-- Exemplos de uso para cada função
+**EN:** All tutorials should follow these standards:
+- **Structure**: Introduction → Prerequisites → Step-by-step instructions → Expected results → Next steps
+- **Code examples**: Include reproducible R code with clear comments
+- **Cross-references**: Link to related API documentation and other tutorials
+- **Bilingual content**: Provide explanations in both English and Portuguese
+- **Scientific context**: Explain statistical concepts and their practical applications
 
-### Tutoriais
-- Guia de início rápido para novos usuários
-- Tutoriais passo-a-passo para análises específicas
-- Exemplos de uso das aplicações Shiny
-- Melhores práticas e recomendações
+**PT:** Todos os tutoriais devem seguir estes padrões:
+- **Estrutura**: Introdução → Pré-requisitos → Instruções passo a passo → Resultados esperados → Próximos passos
+- **Exemplos de código**: Incluir código R reproduzível com comentários claros
+- **Referências cruzadas**: Vincular à documentação da API e outros tutoriais relacionados
+- **Conteúdo bilíngue**: Fornecer explicações em inglês e português
+- **Contexto científico**: Explicar conceitos estatísticos e suas aplicações práticas
 
-### Estudos de Caso
-- Análise de dados reais
-- Comparação de métodos estatísticos
-- Interpretação de resultados
-- Visualizações e relatórios
+## Cross-References / Referências Cruzadas
 
-### Documentação Técnica
-- Arquitetura do sistema
-- Algoritmos implementados
-- Benchmarks de performance
-- Especificações de hardware recomendado
+**EN:** Use the following linking conventions:
+- API functions: `[function_name()](../api/functions_reference.md#function_name)`
+- Other tutorials: `[Tutorial Title](../tutorials/filename.md)`
+- Examples: `[Example Name](../examples/case_studies/filename.md)`
+- Technical specs: `[Technical Topic](../technical/filename.md)`
 
-## Formatos de Documentação
+**PT:** Use as seguintes convenções de vinculação:
+- Funções da API: `[nome_funcao()](../api/functions_reference.md#nome_funcao)`
+- Outros tutoriais: `[Título do Tutorial](../tutorials/filename.md)`
+- Exemplos: `[Nome do Exemplo](../examples/case_studies/filename.md)`
+- Especificações técnicas: `[Tópico Técnico](../technical/filename.md)`
 
-- **Markdown (.md)**: Documentação básica e guias
-- **R Markdown (.Rmd)**: Tutoriais com código executável
-- **HTML**: Documentação gerada automaticamente
-- **PDF**: Relatórios técnicos e manuais
+## Incremental Contribution / Contribuição Incremental
 
-## Como Contribuir
+**EN:** This scientific R project follows an incremental documentation approach:
 
-1. Seguir o template padrão para cada tipo de documento
-2. Incluir exemplos práticos sempre que possível
-3. Manter linguagem clara e técnica apropriada
-4. Adicionar referências bibliográficas quando relevante
-5. Revisar ortografia e formatação antes de submeter
+1. **Start Small**: Begin with basic function documentation
+2. **Build Progressively**: Add tutorials as features are developed
+3. **Cross-link**: Maintain connections between related documents
+4. **Update Continuously**: Keep documentation synchronized with code changes
+5. **Peer Review**: All documentation changes should be reviewed for scientific accuracy
+6. **Version Control**: Use semantic versioning for major documentation updates
 
-## Ferramentas de Documentação
+**PT:** Este projeto científico em R segue uma abordagem de documentação incremental:
 
-- **roxygen2**: Documentação de funções R
-- **pkgdown**: Site de documentação automática
-- **bookdown**: Livros e documentos longos
-- **rmarkdown**: Relatórios dinâmicos
+1. **Comece Pequeno**: Inicie com documentação básica de funções
+2. **Construa Progressivamente**: Adicione tutoriais conforme as funcionalidades são desenvolvidas
+3. **Vincule**: Mantenha conexões entre documentos relacionados
+4. **Atualize Continuamente**: Mantenha a documentação sincronizada com mudanças no código
+5. **Revisão por Pares**: Todas as mudanças na documentação devem ser revisadas para precisão científica
+6. **Controle de Versão**: Use versionamento semântico para atualizações importantes da documentação
 
-## Manutenção
+## Contributing Guidelines / Diretrizes de Contribuição
 
-- Revisão trimestral da documentação
-- Atualização com novas funcionalidades
-- Validação de links e referências
-- Feedback da comunidade de usuários
+**EN:** When contributing to documentation:
+- Follow the established bilingual format
+- Include working R code examples
+- Test all code before submission
+- Reference relevant statistical literature
+- Maintain consistent formatting and style
+- Update cross-references when adding new content
+
+**PT:** Ao contribuir para a documentação:
+- Siga o formato bilíngue estabelecido
+- Inclua exemplos de código R funcionais
+- Teste todo código antes da submissão
+- Referencie literatura estatística relevante
+- Mantenha formatação e estilo consistentes
+- Atualize referências cruzadas ao adicionar novo conteúdo
