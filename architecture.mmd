@@ -1,0 +1,22 @@
+graph TD
+    A[Data Input] --> B{Data Preprocessing};
+    B --> C{Descriptive Analysis};
+    B --> D{Hypothesis Testing};
+    B --> E{Regression Analysis};
+    B --> F{Multivariate Analysis};
+    B --> G{Time Series Analysis};
+    B --> H{Statistical Machine Learning};
+    C --> I[Visualization];
+    D --> I;
+    E --> I;
+    F --> I;
+    G --> I;
+    H --> I;
+    I --> J[Outputs];
+    J --> K[Reports];
+    J --> L[Figures];
+    J --> M[Tables];
+    J --> N[Models];
+    O[Shiny Apps] --> P{Interactive Dashboards};
+    P --> I;
+
