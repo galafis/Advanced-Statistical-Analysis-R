@@ -80,26 +80,23 @@ A complete statistical analysis system that implements advanced methodologies in
 
 ```
 Advanced-Statistical-Analysis-R/
-├── R/                              # Main R scripts
-│   ├── categorical_analysis.R      # Categorical data analysis
-│   ├── data_preprocessing.R        # Data preprocessing
-│   ├── descriptive_analysis.R      # Descriptive analysis
-│   ├── hypothesis_testing.R        # Hypothesis testing
-│   ├── machine_learning.R          # Statistical machine learning
-│   ├── multivariate_analysis.R     # Multivariate analysis
-│   ├── regression_analysis.R       # Regression analysis
-│   ├── survival_analysis.R         # Survival analysis
-│   ├── time_series_analysis.R      # Time series analysis
-│   └── visualization.R             # Advanced visualizations
+├── R/                              # Main R scripts and core classes
+│   ├── functions/                  # Organized R functions by category
+│   │   ├── descriptive/            # Descriptive statistics functions
+│   │   ├── inferential/            # Hypothesis testing and inference
+│   │   ├── regression/             # Regression analysis functions
+│   │   ├── multivariate/           # Multivariate analysis
+│   │   ├── timeseries/             # Time series analysis
+│   │   ├── machine_learning/       # ML algorithms and utilities
+│   │   ├── visualization/          # Advanced plotting functions
+│   │   └── utilities/              # Helper and utility functions
+│   ├── statistical_analyzer.R      # R6 class for statistical analysis
+│   └── visualization.R             # Core visualization functions
 ├── data/                           # Input data
 │   ├── examples/                   # Example datasets
 │   ├── processed/                  # Processed data
 │   └── raw/                        # Raw data
 ├── docs/                           # Documentation
-├── functions/                      # Custom functions
-│   ├── plotting_functions.R        # Plotting functions
-│   ├── statistical_tests.R         # Custom statistical tests
-│   └── utility_functions.R         # Utility functions
 ├── outputs/                        # Generated results
 │   ├── figures/                    # Graphs and visualizations
 │   ├── models/                     # Saved models
@@ -117,7 +114,7 @@ Advanced-Statistical-Analysis-R/
 ├── LICENSE                         # Project license
 ├── README.md                       # Project documentation
 ├── requirements.R                  # R package requirements
-└── statistical_analysis.R          # Main script
+└── statistical_analysis.R          # Main script to run analyses
 ```
 
 ## 🚀 Quick Start
