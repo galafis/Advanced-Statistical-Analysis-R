@@ -143,3 +143,26 @@ if (FALSE) {
 # =============================================================================
 # END OF FILE / FIM DO ARQUIVO
 # =============================================================================
+
+
+# Advanced visualization functions
+create_advanced_plots <- function(data) {
+  # Correlation heatmap
+  numeric_data <- select_if(data, is.numeric)
+  correlation_plot <- corrplot::corrplot(cor(numeric_data, use = "complete.obs"), 
+                              method = "color", type = "upper", 
+                              order = "hclust", tl.cex = 0.8)
+  
+  # Distribution plots
+  distribution_plots <- lapply(names(numeric_data), function(var) {
+    ggplot(data, aes_string(x = var)) +
+      geom_histogram(bins = 30, fill = "steelblue", alpha = 0.7) +
+      geom_density(aes(y = ..density.. * nrow(data) * diff(range(data[[var]], na.rm = TRUE)) / 30), 
+                   color = "red", size = 1) +
+      theme_minimal() +
+      labs(title = paste("Distribution of", var))
+  })
+  
+  return(list(correlation = correlation_plot, distributions = distribution_plots))
+}
+
