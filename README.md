@@ -33,6 +33,22 @@ Advanced statistical analysis and data visualization platform developed in R, of
 
 A complete statistical analysis system that implements advanced methodologies including multivariate analysis, statistical modeling, hypothesis testing, regression analysis, time series, and statistical machine learning, with a focus on scientific rigor and practical applicability.
 
+```mermaid
+flowchart LR
+    A[Data Import\nCSV / Excel / DB] --> B[Exploratory Analysis\nDescriptive Stats / EDA]
+    B --> C[Statistical Tests\nHypothesis Testing\nANOVA / Chi-Square]
+    C --> D[Regression Models\nLinear / Logistic\nGLM / Mixed Models]
+    D --> E[Visualization\nggplot2 / Plotly\nShiny Dashboards]
+    E --> F[Report\nHTML / PDF\nStatistical Summary]
+
+    style A fill:#276DC3,color:#fff
+    style B fill:#4A90D9,color:#fff
+    style C fill:#5BA3E0,color:#fff
+    style D fill:#276DC3,color:#fff
+    style E fill:#4A90D9,color:#fff
+    style F fill:#1A5FAD,color:#fff
+```
+
 ### ✨ Key Features
 
 - **📊 Multivariate Analysis**: PCA, Factor Analysis, Cluster Analysis, MANOVA
